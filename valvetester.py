@@ -20,7 +20,6 @@ def do():
 	        x = (x/10-51300)/200
 	        return x
 
-
 	i2c = I2C(0, scl=Pin(4), sda=Pin(5), freq=200000)
 	oled = SSD1306_I2C(128, 64, i2c)                  
 	scale = scale(d_out=18, pd_sck=19)
